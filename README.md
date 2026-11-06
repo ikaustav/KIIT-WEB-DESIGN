@@ -170,11 +170,17 @@ npx serve .
 
 ## 🌐 Deployment Guide
 
-### Deploying to GitHub Pages
-1. Push your repository to GitHub.
+### Git deploy from the main branch
+This project is a pure static website, so it is deployable directly from GitHub using the built-in Pages workflow.
+
+1. Push the repository to GitHub.
 2. Go to **Settings** > **Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch** (`main` / root).
-4. Your site will be live in 1–2 minutes.
+3. Under **Build and deployment**, choose **GitHub Actions**.
+4. The repository already includes the Pages workflow in `.github/workflows/deploy.yml`.
+5. On the next push to `main`, GitHub will automatically build and deploy the site.
+
+The live site will be published at:
+`https://<your-username>.github.io/KIIT-WEB-DESIGN/`
 
 ---
 
